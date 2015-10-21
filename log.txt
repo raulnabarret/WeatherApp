@@ -1,0 +1,3 @@
+* 9783d21 Creamos la carpeta js y el archivo index.js que permiten geolocalizar al usuario
+* 115e644 Se creo el index de la app Platzi Weather
+* 8110635 Se creo la carpeta CSS y los estilos para la app Platzi Weather

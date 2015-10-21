@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang ="es">
+<meta charset="utf-8">
+<head>
+	<title>Platzi Weather</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href='https://fonts.googleapis.com/css?family=Lato:400,900italic' rel='stylesheet' type='text/css'>
+</head>
+<body>
+	<header class="main-header">
+		<h1>Forecast Buddy</h1>
+		<h2>Current position, current weather</h2>
+	</header>
+
+	<div class="loader">Getting you current position ... </div>
+
+
+	<form action="" class="search">
+		<input type="text" data-input="cityAdd" class ="search-text" placeholder="Agregar una nueva ciudad">
+		<input type="submit" data-button="add" class="search-btn btn" value="Añadir una nueva ciudad">
+		<button data-saved-cities class="search-btn btn">Ver ciudades</button>
+	</form>
+
+	<main class="cards-group">
+		<template id="template-city">
+			<div class="card">
+				<header class="card-header">
+					<h3 data-city class="card-title"></h3>
+					<h4 data-time class="card-time"></h4>
+				</header>
+				<div class="card-info">
+					<img data-icon src="" alt="" class="card-image">
+					<span data-temp="max" class="card-maxt"></span>
+					<span data-temp="min" class="card-mint"></span>
+					<span data-temp="current" class="card-temp"></span>
+				</div>
+			</div>
+		</template>
+	</main>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>
